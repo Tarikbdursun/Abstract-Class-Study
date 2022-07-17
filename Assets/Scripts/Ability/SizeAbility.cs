@@ -22,7 +22,7 @@ namespace DefaultNamespace
 
         public void ChangeSize()
         {
-            player.localScale *= sizes[sizesIndex];
+            player.localScale = Vector3.one*sizes[sizesIndex];
             sizesIndex++;
             if (sizesIndex>=sizes.Count)
             {
